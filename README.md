@@ -11,7 +11,7 @@ Esta API consume los servicios de [giphy](https://giphy.com/) y ofrece cuatro se
 
 ## Endpoints de la API
 - **Autenticación Pública**: 
-  - `GET http://localhost:8000/api/v1/auth/login`
+  - `POST http://localhost:8000/api/v1/auth/login`
   
 - **Operaciones Privadas con Gifs**:
   1. **Consulta de Gifs por Query**:
@@ -80,7 +80,7 @@ docker-compose exec app-server php artisan db:seed --class=UserSeeder
 ```
 
 ### Ejecución de Pruebas
-Para ejecutar las pruebas y validar el correcto funcionamiento de la API *(recordar actualizar el archivo .env con la key de GIPHY_API_KEY correspondiente)*, utiliza el siguiente comando:
+Para ejecutar las pruebas y validar el correcto funcionamiento de la API **(recordar actualizar el archivo .env con la key de GIPHY_API_KEY correspondiente)**, utiliza el siguiente comando:
 
 ```bash
 docker-compose exec app-server php artisan test
@@ -88,3 +88,6 @@ docker-compose exec app-server php artisan test
 
 ### UML
 Dentro del directorio ./uml se encuentran los diagramas que representan la solución
+
+### Postman
+Dentro del directorio ./postman se encuentra la collección
